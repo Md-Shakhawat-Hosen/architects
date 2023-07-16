@@ -12,6 +12,10 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 .primary-text{
     color:#727272;
@@ -83,6 +87,44 @@ nav h3{
 }
 /* banner section end */
 
+
+/* Main section start from here */
+
+/* Quick list section start */
+ .quick-list-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 85px;
+    gap: 73px;
+ }
+ .quick-list-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+ }
+ .quick-list-content{
+    padding: 10px;
+ }
+ .quick-list-content h2{
+    color:#131313;
+    font-weight: 700px;
+    font-size: 2.8rem;
+ }
+ .quick-style_1{
+    color: #727272;
+    font-weight: 500px;
+ }
+ .quick-style_2{
+    color: #FF900E;
+ }
+/* Quick list section end */
+
+
+/* Main section end here */
+
+
+
 /* Media query section start for small devices */
 @media screen and (max-width:576px) {
     header{
@@ -100,9 +142,27 @@ nav h3{
 .banner .banner-title{
     font-size: 2rem;
 }
-.banner-container img{
+.banner-img img{
     width: 100%;
 }
+.quick-list-container{
+    flex-direction: column-reverse;
+}
+.quick-list-images{
+    grid-template-columns: 1fr;
+}
+/* .quick-list-container .quick-list-images img{
+    width: 200px;
+} */
+.quick-list-content h2{
+    font-size: 1.8rem;
+}
+.quick-list-images img{
+    width: 100%;
+}
+
+
+
 
 }
 /* Media query section end for small devices */
@@ -119,6 +179,10 @@ nav h3{
     .banner-container img{
     width: 100%;
 }
+.quick-list-container{
+    flex-direction: column-reverse;
+}
+
 }
 
 /* Media query section start for medium devices */
