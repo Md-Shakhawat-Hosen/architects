@@ -121,6 +121,58 @@ nav h3{
 /* Quick list section end */
 
 
+/* Feature section start from here */
+.features-container{
+    margin-top: 85px;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 146px;
+}
+
+.left-feature .feature-title p{
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.feature-title{
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+.feature-title h1{
+    color: #131313;
+    font-weight: 700px;
+    font-size: 2.8rem;
+}
+.feature-card{
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.experience-card{
+    position: relative;
+    bottom: 120px;
+    right: 92px;
+    text-align: center;
+    background-color: #FF900E;
+    width: max-content;
+    padding: 46px 42px;
+    border-radius: 8px;
+}
+.experience-card h1{
+    font-size: 4rem;
+    color: #FFF;
+    font-weight: 700;
+}
+.experience-card p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* Feature section end here */
+
+
 /* Main section end here */
 
 
@@ -130,7 +182,9 @@ nav h3{
     header{
         padding:10px;
     }
-    nav,nav ul{
+    nav,nav ul,
+    .features-container
+    {
         flex-direction: column;
     }
     .banner{
@@ -161,7 +215,27 @@ nav h3{
     width: 100%;
 }
 
+.right-feature-img img{
+    width: 100%;
+}
+.feature-title h1{
+    font-size: 2rem;
+}
+.features-container .right-feature-img{
+    width: 70%;
+    margin: auto;
+}
 
+.experience-card h1{
+    font-size: 1.5rem;
+}
+.experience-card p{
+    font-size: 1rem;
+}
+.experience-card{
+    bottom: 90px;
+    right: 30px;
+}
 
 
 }
