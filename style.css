@@ -80,6 +80,9 @@ nav h3{
 .banner-img{
     margin-top: 50px;
 }
+.banner-img img{
+    width: 100%;
+}
 .banner-title{
     color: #131313;
     font-weight: 700;
@@ -302,6 +305,7 @@ footer{
     right: 30px;
 }
 .facts-card-container{
+    padding: 10px;
     gap: 10px;
 }
 .sponsor-cards img{
