@@ -12,6 +12,23 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
+.primary-text{
+    color:#727272;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.btn-primary{
+    border-radius: 8px;
+background: #FF900E;
+color: #fff;
+font-size: 1.25rem;
+font-weight: 600px;
+padding: 20px 25px;
+border: 0px;
+margin-top: 32px;
+}
 /* Shared styles end */
 
 /* nav section style start */
@@ -45,3 +62,64 @@ nav h3{
 }
 
 /* nav section style end */
+
+/* banner section start */
+
+.banner-container{
+    margin-top: 102px;
+}
+.banner{
+    width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-img{
+    margin-top: 50px;
+}
+.banner-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 4rem;
+}
+/* banner section end */
+
+/* Media query section start for small devices */
+@media screen and (max-width:576px) {
+    header{
+        padding:10px;
+    }
+    nav,nav ul{
+        flex-direction: column;
+    }
+    .banner{
+        width: auto;
+    }
+    nav h3{
+    font-size: 1.8rem;
+}
+.banner .banner-title{
+    font-size: 2rem;
+}
+.banner-container img{
+    width: 100%;
+}
+
+}
+/* Media query section end for small devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+     header{
+        padding:10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner{
+        width: auto;
+    }
+    .banner-container img{
+    width: 100%;
+}
+}
+
+/* Media query section start for medium devices */
+/* Media query section end for medium devices */
